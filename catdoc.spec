@@ -22,8 +22,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 CATDOC is program which reads MS-Word file and prints readable ASCII
-text to stdout, just like Unix cat command. It also able to produce
-correct escape sequences if some UNICODE charachers have to be
+text to stdout, just like Unix cat command. It is also able to produce
+correct escape sequences if some UNICODE characters have to be
 represented specially in your typesetting system such as (La)TeX.
 
 %description -l pl
