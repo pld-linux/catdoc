@@ -1,4 +1,5 @@
-Summary:	reads MS-Word file and puts its content as plain text on standard output
+Summary:	Reads MS-Word file and puts its content as plain text on standard output
+Summary(pl):	Program konwertuj±cy pliki MS Worda na czysty tekst
 Name:		catdoc
 Version:	0.91.4
 Release:	1
@@ -17,13 +18,19 @@ text to stdout, just like Unix cat command. It also able to produce
 correct escape sequences if some UNICODE charachers have to be
 represented specially in your typesetting system such as (La)TeX.
 
+%description -l pl
+catdoc jest programem czytaj±cym dokumenty MS-Worda i wypisuj±cym
+tekst ASCII na standardowe wyj¶cie, podobnie jak komenda cat. Mo¿e
+tak¿e tworzyæ poprawne sekwencje dla niektórych znaków unikodowych
+reprezentowanych specjalnie w systemie sk³adu, jak np. (La)TeX.
+
 %prep
 %setup -q -n %{name}
 
 %build
 %configure --with-wish=/usr/bin/wish
 
-%{__make} FLAGS="%{?debug:-g -O0}%{!?debug:$RPM_OPT_FLAGS}"
+%{__make} FLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
