@@ -42,14 +42,12 @@ rm -rf $RPM_BUILD_ROOT
 	installroot=$RPM_BUILD_ROOT \
 	mandir=%{_mandir}/man1
 
-gzip -9nf CREDITS README NEWS TODO
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc CREDITS README NEWS TODO
 %attr(755, root, root) %{_bindir}/*
 %{_libdir}/catdoc
 %{_mandir}/man1/*
