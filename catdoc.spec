@@ -2,7 +2,7 @@ Summary:	Reads MS-Word file and puts its content as plain text on standard outpu
 Summary(pl):	Program konwertuj±cy pliki MS Worda na czysty tekst
 Name:		catdoc
 Version:	0.93.3
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Text
 Source0:	ftp://ftp.45.free.net/pub/catdoc/%{name}-%{version}.tar.gz
