@@ -7,7 +7,6 @@ License:	GPL
 Group:		Applications/Text
 Source0:	ftp://ftp.45.free.net/pub/catdoc/%{name}-%{version}.tar.gz
 # Source0-md5:	efe7e24b387444d5967fc2fc25664fb2
-# Source0-size:	121933
 URL:		http://www.45.free.net/~vitus/ice/catdoc/
 BuildRequires:	autoconf
 BuildRequires:	automake
