@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		Applications/Text
 Group(de):	Applikationen/Text
+Group(fr):	Utilitaires/Texte
 Group(pl):	Aplikacje/Tekst
 Source0:	ftp://ftp.ice.ru/pub/vitus/%{name}-%{version}.tar.gz
 URL:		http://www.ice.ru/~vitus/catdoc/
