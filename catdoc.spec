@@ -1,13 +1,13 @@
 Summary:	Reads MS-Word file and puts its content as plain text on standard output
 Summary(pl):	Program konwertuj±cy pliki MS Worda na czysty tekst
 Name:		catdoc
-Version:	0.91.5
+Version:	0.91.6
 Release:	1
 License:	GPL
 Group:		Applications/Text
-Source0:	ftp://ftp.ice.ru/pub/vitus/%{name}-%{version}.tar.gz
-# Source0-md5:	1314239a3d9c9c7bfda608dbcdc33e3f
-URL:		http://www.ice.ru/~vitus/catdoc/
+# Source0-md5:	460ee1aaaa34363b2cfb56748a14a55d
+Source0:	ftp://ftp.45.free.net/pub/catdoc/%{name}-%{version}.tar.gz
+URL:		http://www.45.free.net/~vitus/ice/catdoc/
 BuildRequires:	tk
 BuildRequires:	automake
 BuildRequires:	autoconf
