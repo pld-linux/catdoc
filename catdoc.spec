@@ -29,6 +29,7 @@ reprezentowanych specjalnie w systemie sk³adu, jak np. (La)TeX.
 %setup -q
 
 %build
+cp -f /usr/share/automake/config.sub .
 %{__aclocal}
 %{__autoconf}
 %configure \
