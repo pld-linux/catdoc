@@ -5,14 +5,6 @@ Version:	0.91.5
 Release:	1
 License:	GPL
 Group:		Applications/Text
-Group(cs):	Aplikace/Text
-Group(de):	Anwendungen/Text
-Group(es):	Aplicaciones/Texto
-Group(fr):	Applications/Texte
-Group(ja):	╔╒╔в╔Й╔╠║╪╔╥╔Г╔С/╔ф╔╜╔╧╔х
-Group(pl):	Aplikacje/Tekst
-Group(pt):	AplicaГУes/Texto
-Group(ru):	Приложения/Работа с текстами
 Source0:	ftp://ftp.ice.ru/pub/vitus/%{name}-%{version}.tar.gz
 URL:		http://www.ice.ru/~vitus/catdoc/
 BuildRequires:	tk
