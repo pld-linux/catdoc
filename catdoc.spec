@@ -21,7 +21,7 @@ represented specially in your typesetting system such as (La)TeX.
 %build
 %configure --with-wish=/usr/bin/wish
 
-%{__make} FLAGS="%{?debug:-g -O}%{!?debug:$RPM_OPT_FLAGS}"
+%{__make} FLAGS="%{?debug:-g -O0}%{!?debug:$RPM_OPT_FLAGS}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
