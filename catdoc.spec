@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Text
 Source0:	ftp://ftp.ice.ru/pub/vitus/%{name}-%{version}.tar.gz
+# Source0-md5:	1314239a3d9c9c7bfda608dbcdc33e3f
 URL:		http://www.ice.ru/~vitus/catdoc/
 BuildRequires:	tk
 BuildRequires:	automake
