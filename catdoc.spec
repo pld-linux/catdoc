@@ -6,7 +6,9 @@ License:	GPL
 Group:		Applications/Text
 Group(de):	Applikationen/Text
 Group(pl):	Aplikacje/Tekst
-Source0:	http://www.ice.ru/~vitus/catdoc/%{name}-%{version}.tar.gz
+Source0:	ftp://ftp.ice.ru/pub/vitus/%{name}-%{version}.tar.gz
+URL:		http://www.ice.ru/~vitus/catdoc/
+BuildRequires:	tk
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -25,6 +27,7 @@ represented specially in your typesetting system such as (La)TeX.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install \
 	installroot=$RPM_BUILD_ROOT \
 	mandir=%{_mandir}/man1
