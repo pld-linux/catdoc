@@ -28,7 +28,7 @@ reprezentowanych specjalnie w systemie sk³adu, jak np. (La)TeX.
 %setup -q
 
 %build
-aclocal
+%{__aclocal}
 %{__autoconf}
 %configure \
 	--with-wish=/usr/bin/wish
