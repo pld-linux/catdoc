@@ -28,7 +28,7 @@ reprezentowanych specjalnie w systemie sk³adu, jak np. (La)TeX.
 %setup -q -n %{name}
 
 %build
-%configure --with-wish=/usr/bin/wish
+%configure2_13 --with-wish=/usr/bin/wish
 
 %{__make} FLAGS="%{rpmcflags}"
 
