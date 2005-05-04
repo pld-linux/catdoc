@@ -1,12 +1,13 @@
 Summary:	Reads MS-Word file and puts its content as plain text on standard output
 Summary(pl):	Program konwertuj±cy pliki MS Worda na czysty tekst
 Name:		catdoc
-Version:	0.93.4
+Version:	0.94
 Release:	1
 License:	GPL
 Group:		Applications/Text
 Source0:	ftp://ftp.45.free.net/pub/catdoc/%{name}-%{version}.tar.gz
-# Source0-md5:	efe7e24b387444d5967fc2fc25664fb2
+# Source0-md5:	f884dabe366d66c6cda35dacb0cdceab
+Patch0:		%{name}-opt.patch
 URL:		http://www.45.free.net/~vitus/ice/catdoc/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -27,6 +28,7 @@ reprezentowanych specjalnie w systemie sk³adu, jak np. (La)TeX.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 cp -f /usr/share/automake/config.sub .
@@ -35,8 +37,7 @@ cp -f /usr/share/automake/config.sub .
 %configure \
 	--with-wish=/usr/bin/wish
 
-%{__make} \
-	FLAGS="%{rpmcflags}"
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
