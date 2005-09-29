@@ -3,7 +3,7 @@ Summary(pl):	Program konwertuj±cy pliki MS Worda na czysty tekst
 Name:		catdoc
 Version:	0.94
 Release:	1
-License:	GPL
+License:	GPL v2
 Group:		Applications/Text
 Source0:	ftp://ftp.45.free.net/pub/catdoc/%{name}-%{version}.tar.gz
 # Source0-md5:	f884dabe366d66c6cda35dacb0cdceab
