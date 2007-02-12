@@ -1,5 +1,5 @@
 Summary:	Reads MS-Word file and puts its content as plain text on standard output
-Summary(pl):	Program konwertuj±cy pliki MS Worda na czysty tekst
+Summary(pl.UTF-8):   Program konwertujÄ…cy pliki MS Worda na czysty tekst
 Name:		catdoc
 Version:	0.94.2
 Release:	1
@@ -20,11 +20,11 @@ text to stdout, just like Unix cat command. It is also able to produce
 correct escape sequences if some UNICODE characters have to be
 represented specially in your typesetting system such as (La)TeX.
 
-%description -l pl
-catdoc jest programem czytaj±cym dokumenty MS-Worda i wypisuj±cym
-tekst ASCII na standardowe wyj¶cie, podobnie jak komenda cat. Mo¿e
-tak¿e tworzyæ poprawne sekwencje dla niektórych znaków unikodowych
-reprezentowanych specjalnie w systemie sk³adu, jak np. (La)TeX.
+%description -l pl.UTF-8
+catdoc jest programem czytajÄ…cym dokumenty MS-Worda i wypisujÄ…cym
+tekst ASCII na standardowe wyjÅ›cie, podobnie jak komenda cat. MoÅ¼e
+takÅ¼e tworzyÄ‡ poprawne sekwencje dla niektÃ³rych znakÃ³w unikodowych
+reprezentowanych specjalnie w systemie skÅ‚adu, jak np. (La)TeX.
 
 %prep
 %setup -q
