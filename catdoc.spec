@@ -1,5 +1,5 @@
 Summary:	Reads MS-Word file and puts its content as plain text on standard output
-Summary(pl.UTF-8):   Program konwertujący pliki MS Worda na czysty tekst
+Summary(pl.UTF-8):	Program konwertujący pliki MS Worda na czysty tekst
 Name:		catdoc
 Version:	0.94.2
 Release:	1
