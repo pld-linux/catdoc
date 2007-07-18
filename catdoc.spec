@@ -5,10 +5,10 @@ Version:	0.94.2
 Release:	1
 License:	GPL v2
 Group:		Applications/Text
-Source0:	ftp://ftp.45.free.net/pub/catdoc/%{name}-%{version}.tar.gz
+Source0:	http://ftp.wagner.pp.ru/pub/catdoc/%{name}-%{version}.tar.gz
 # Source0-md5:	243e1680bb3e703616f5adecfee24491
 Patch0:		%{name}-opt.patch
-URL:		http://www.45.free.net/~vitus/software/catdoc/
+URL:		http://www.wagner.pp.ru/~vitus/software/catdoc/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	tk
@@ -42,7 +42,7 @@ cp -f /usr/share/automake/config.sub .
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install \
+%{__make} -j1 install \
 	installroot=$RPM_BUILD_ROOT \
 	mandir=%{_mandir}/man1
 
