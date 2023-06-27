@@ -1,0 +1,11 @@
+--- catdoc-0.95/doc/Makefile.in.orig	2016-05-25 06:54:20.000000000 +0200
++++ catdoc-0.95/doc/Makefile.in	2023-06-27 16:08:37.300240230 +0200
+@@ -30,7 +30,7 @@ clean:
+             wordview.txt wordview.ps build
+ install: @installtargets@
+ install-catdoc: catdoc.1 xls2csv.1 catppt.1
+-	../mkinstalldirs $(installroot)$(mandir)
++	../mkinstalldirs $(installroot)$(mandir)/man1
+ 	$(INSTALL) -m 644 catdoc.1 $(installroot)$(mandir)/man1/catdoc.1
+ 	$(INSTALL) -m 644 xls2csv.1 $(installroot)$(mandir)/man1/xls2csv.1
+ 	$(INSTALL) -m 644 catppt.1 $(installroot)$(mandir)/man1/catppt.1

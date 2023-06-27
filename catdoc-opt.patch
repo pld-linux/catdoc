@@ -1,12 +1,12 @@
---- catdoc-0.94/configure.in.orig	2005-05-01 14:04:09.000000000 +0200
-+++ catdoc-0.94/configure.in	2005-05-04 21:23:02.088990752 +0200
-@@ -100,10 +100,6 @@
+--- catdoc-0.95/configure.in.orig	2023-06-27 05:32:57.234413642 +0200
++++ catdoc-0.95/configure.in	2023-06-27 05:47:37.729643590 +0200
+@@ -98,10 +98,6 @@ AC_C_CONST
  dnl Checks for library functions.
  AC_FUNC_SETVBUF_REVERSED
  
--if test "$GCC" = "yes"; then
--	CFLAGS="-g -O2 -Wall"
--fi
+-#if test "$GCC" = "yes"; then
+-#	CFLAGS="-g -O2 -Wall"
+-#fi
 -
  AC_DEFINE_UNQUOTED([SOURCE_CHARSET],"$sourcecharset",[Character encoding used by default for 8-bit source files])
  AC_DEFINE_UNQUOTED([TARGET_CHARSET],"$targetcharset",[Output character encoding used by default, if impossible to determine encoding from locale])

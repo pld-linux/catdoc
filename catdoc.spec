@@ -1,14 +1,14 @@
 Summary:	Reads MS-Word file and puts its content as plain text on standard output
 Summary(pl.UTF-8):	Program konwertujący pliki MS Worda na czysty tekst
 Name:		catdoc
-Version:	0.94.2
-Release:	2
+Version:	0.95
+Release:	1
 License:	GPL v2
 Group:		Applications/Text
 Source0:	http://ftp.wagner.pp.ru/pub/catdoc/%{name}-%{version}.tar.gz
-# Source0-md5:	243e1680bb3e703616f5adecfee24491
+# Source0-md5:	4ece2f43b140fab6a2c3a9d6436d7779
 Patch0:		%{name}-opt.patch
-Patch1:		%{name}-build.patch
+Patch1:		%{name}-make.patch
 URL:		http://www.wagner.pp.ru/~vitus/software/catdoc/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -45,15 +45,20 @@ cp -f /usr/share/automake/config.sub .
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} -j1 install \
-	installroot=$RPM_BUILD_ROOT \
-	mandir=%{_mandir}/man1
+	installroot=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc CREDITS NEWS README TODO
-%attr(755,root,root) %{_bindir}/*
+%doc NEWS README TODO
+%attr(755,root,root) %{_bindir}/catdoc
+%attr(755,root,root) %{_bindir}/catppt
+%attr(755,root,root) %{_bindir}/wordview
+%attr(755,root,root) %{_bindir}/xls2csv
 %{_datadir}/catdoc
-%{_mandir}/man1/*
+%{_mandir}/man1/catdoc.1*
+%{_mandir}/man1/catppt.1*
+%{_mandir}/man1/wordview.1*
+%{_mandir}/man1/xls2csv.1*
